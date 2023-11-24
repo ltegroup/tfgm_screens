@@ -13,6 +13,7 @@ Changes to layout/tags of the source pages may cause layout issues or stop page 
  - Add cronjob to run process.py at desired interval
 
  Config
+ Add a settings.py file with sources in the following format. The provided settings_example.py can be renamed and used.
  <code>
  SOURCES = [
     {
