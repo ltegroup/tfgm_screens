@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page-wrapper">
+    <div class="container-fluid">
+        <div class="clearfix mb-2 mt-2">
+            <h1 class="float-start">Travel Times</h1>
+            <img src="./logo1.png" width="180px" class="float-end">
+            <img src="./logo2.png" width="200px" class="float-end me-4">
+        </div>
+
+        {% for table in source_data %}
+        <div class="row mb-4 travel-type {% if not loop.first %}collapse{% endif %}">
+            <div class="col-md-12 ">
+                <div class="clearfix">
+                    <h2>{{ table.name }} <span class="modified">Updated {{ table.modified }}</span></h2>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                {% if table.html == None %}
+                    <p class="no-info">No information currently available</p>
+                {% else %}
+                    {{ table.html }}
+                {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="generated-when">Page generated {{ generated_when }}</div>
+    </div>
+</div>
+{% endblock %}

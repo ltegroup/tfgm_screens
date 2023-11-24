@@ -1,0 +1,118 @@
+body {
+  background-color: #f3f0e8;
+  background: url(../bkground.jpg) no-repeat fixed;
+  background-position: bottom;
+  background-size: cover;
+  margin: 0;
+}
+
+.page-wrapper {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.card {
+  background: #e0e0e0;
+  color: #272725;
+}
+
+.no-info {
+  text-align: center;
+  color: black;
+}
+
+.generated-when {
+  color: white;
+}
+
+.modified {
+  float: right;
+  font-size: 0.8em;
+  color: grey;
+  position: relative;
+  top: 14px;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+}
+table thead .bus .departure-expected {
+  padding-right: 20px;
+  text-align: right;
+}
+table thead .tram .departure-wait {
+  padding-right: 20px;
+  text-align: right;
+}
+table tbody .departure-expected {
+  padding-right: 20px;
+  text-align: right;
+}
+table tbody .bus td {
+  padding: 15px 15px 10px 15px;
+}
+table tbody .bus .departure-indicator {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+table tbody .bus .departure-indicator.live-indicator {
+  color: green;
+}
+table tbody .bus .palm-stand, table tbody .bus .palm-operator {
+  display: none;
+}
+table tbody .tram td {
+  padding: 15px 15px 15px 15px;
+}
+table tbody .tram .departure-wait {
+  text-align: right;
+  padding-right: 20px;
+}
+table tbody .tram .label {
+  display: none;
+}
+table tbody .rail td {
+  padding: 10px 15px 10px 15px;
+}
+table tbody .rail .small-screen {
+  display: none;
+}
+table tbody .rail .departure-time {
+  text-align: right;
+  padding-right: 20px;
+}
+table tbody .rail .departure-time .departure-status {
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+table tbody .rail .departure-time .departure-status.departure-delayed {
+  color: #d13d3d;
+}
+table tbody tr {
+  border-top: 4px solid #e0e0e0;
+  background-color: white;
+}
+table tbody p {
+  color: #272725;
+  font-size: 1em;
+}
+table .bus-deps-h3 {
+  color: #272725;
+  font-size: 1.2em;
+  margin: 0;
+}
