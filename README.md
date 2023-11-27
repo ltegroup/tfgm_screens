@@ -26,7 +26,7 @@ Changes to layout/tags of the source pages may cause layout issues or stop page 
 </code>
 
 ## Development
-Change the template files then run process.py to see changes. 
-Edit and complile SCSS to make changes to CSS.
-npm install -g sass
-sass styles.scss > styles.css
+ - Change the template files then run process.py to see generated index.html in static folder. 
+ - Edit and complile SCSS to make changes to CSS.
+ - npm install -g sass
+ - sass styles.scss > styles.css
