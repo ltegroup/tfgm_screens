@@ -1,4 +1,4 @@
-# travel_info
+# TFGM Screens
 
 Scrapes https://tfgm.com/ travel info and produce a page for display on tvs. Currently configured for displays on 1080p tv in portrait mode.
 
@@ -14,6 +14,7 @@ Changes to layout/tags of the source pages may cause layout issues or stop page 
 
  Config
  Add a settings.py file with sources in the following format. The provided settings_example.py can be renamed and used.
+
  <code>
  SOURCES = [
     {
